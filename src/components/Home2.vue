@@ -149,7 +149,7 @@ export default {
     margin-right:0%;
     padding-left:1%;
     padding-right:1%;
-    height:62vh
+    height:70vh
 }
 .layout{
     display:inline-flex;
@@ -231,8 +231,8 @@ span{
 }
 
 .btn-wrapper{
-    margin-top:7%;
-    margin-left:-2%;
+    margin-top:9.8%;
+    margin-left:-2.4%;
     margin-right:auto;
     display:flex;
     width:155px;
