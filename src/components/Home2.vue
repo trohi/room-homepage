@@ -154,7 +154,7 @@ export default {
 .layout{
     display:inline-flex;
     width:100%;
-    margin-top:0px;
+    margin-top:-10%;
     padding-top:0px
 }
 
