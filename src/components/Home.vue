@@ -147,6 +147,7 @@ export default {
     height:62vh
 }
 .layout{
+    display:inline-flex;
     width:100%;
     margin-top:0px;
     padding-top:0px
