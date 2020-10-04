@@ -1,12 +1,12 @@
 <template>
 <div class="superContainer">
-        <v-img 
+        <img 
           @click="menu = true"
           class="hamburgerIcon hidden-sm-and-up"
           height="15"
           v-if="!menu" 
           src="../assets/icon-hamburger.svg"
-          ></v-img>
+          >
           <span class="mobileTitle hidden-sm-and-up" v-if="!menu">room</span>
         <div v-if="menu">
             <div class="mob-navigation">
@@ -30,7 +30,7 @@
                         <v-list-item>contact</v-list-item>
                     </v-list>
                 </div>
-                <v-img class="top-image" :src="currentSlide.picture"></v-img>
+                <img class="top-image" :src="currentSlide.picture">
         </div>
         <div class="flex2">
             <h1 class="slider-header">{{currentSlide.header}}</h1>
@@ -38,26 +38,26 @@
                     <span class="slider-content">{{currentSlide.content}}</span>
                </div>
                <div class="shop-now">
-                   <span class="shop-text mr-5">SHOP NOW</span> <v-img class="shop-now-img" width="70" src="../assets/icon-arrow.svg"></v-img>
+                   <span class="shop-text mr-5">SHOP NOW</span> <img class="shop-now-img" width="70" src="../assets/icon-arrow.svg">
                </div>
                <div class="btn-wrapper">
-                <v-btn class="mt-4" dark @click.stop="slidePrev"><v-img height="30" src="../assets/icon-angle-left.svg"></v-img></v-btn> <v-btn class="mt-4" dark  @click="slideNext"><v-img height="30" src="../assets/icon-angle-right.svg"></v-img></v-btn>
+                <button @click.stop="slidePrev"><v-img width="15" src="../assets/icon-angle-left.svg"></v-img></button> <button  @click="slideNext"><v-img width="15" src="../assets/icon-angle-right.svg"></v-img></button>
                </div>
         </div>
         </div>
         <div class="layout">
             <div class="flex3">
-                <v-img  src="../assets/image-about-dark.jpg"></v-img>
+                <img  src="../assets/image-about-dark.jpg">
             </div>
             <div class="flex4">
-                <h5 class="about-header mt-16 ">ABOUT OUR FURNITURE</h5>
-                <span class="about-content">
+                <h5 class="about-header mt-14 ">ABOUT OUR FURNITURE</h5>
+                <p class="about-content">
                     Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick cohesive theme that best express your interests and what inspire you.
                     Finde furniture pieces, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.
-                </span>
+                </p>
             </div>
             <div class="flex5">
-                <v-img width="550" height="245" src="../assets/image-about-light.jpg"></v-img>
+                <img  src="../assets/image-about-light.jpg">
             </div>
         </div>
     </div>
@@ -65,7 +65,7 @@
 
 <script>
 export default {
-    name:'Home',
+    name:'Home2',
     data:()=>{
         return{
             index:0,
@@ -137,6 +137,11 @@ export default {
 .flex1{
     width:60%;
 }
+
+.top-image{
+    width:115%
+}
+
 .flex2{
     width:40%;
     margin-top:5%;
@@ -160,7 +165,6 @@ export default {
 
 .flex4{
     width:40%;
-    margin-top:-5px;
     padding-left:4%;
     padding-right:4%
 }
@@ -171,7 +175,7 @@ export default {
 
 .navigation{
     position:absolute;
-    top:50px;
+    top:40px;
     z-index:2;
 }
 
@@ -184,10 +188,12 @@ export default {
     display:inline-flex;
     flex-direction: column;
     cursor: pointer;
+    font-weight: bold;
+    font-size:12px
 }
 
 .v-list :nth-child(1){
-    font-size:20px;
+    font-size:22px;
     font-weight: bold;
     margin-left:4vh;
     margin-right:4vh;
@@ -196,13 +202,14 @@ export default {
 .slider-header{
     font-size:30px !important;
     font-weight: 700;
-    margin-bottom:9%
+    margin-top:9%;
+    margin-bottom:9%;
+    padding:0px 0px 0px 84px
 }
 
 .content-wrap{
     height:28.3%;
-    margin-left:auto;
-    margin-right:auto
+    padding: 0px 0px 0px 84px
 }
 
 .about-header{
@@ -210,7 +217,13 @@ export default {
     font-weight: bold;
     font-size:13px;
     letter-spacing: 4px;
-    padding-bottom:10px;;
+    padding-bottom:10px;
+    padding-left:20px
+}
+
+.about-content{
+    padding-left: 20px;
+    color: hsl(0, 0%, 63%)
 }
 
 span{
@@ -218,18 +231,18 @@ span{
 }
 
 .btn-wrapper{
-    margin-top:10.6%;
-    margin-left:-30.1%;
+    margin-top:7%;
+    margin-left:-2%;
     margin-right:auto;
     display:flex;
-    width:195px;
+    width:155px;
     height:70px;
     background-color: black;
 }
 
-.btn-wrapper .v-btn{
-    margin-left:12%;
-    margin-right:0
+.btn-wrapper button{
+    margin-left:21%;
+    margin-right:15%;
 }
 
 .v-btn{
@@ -238,9 +251,10 @@ span{
 
 .shop-now{
     display:inline-flex;
-    margin-top:8%;
+    margin-top:5%;
     margin-right:20px;
-    cursor:pointer
+    cursor:pointer;
+    padding: 0px 0px 0px 84px
 }
 
 .shop-text{
@@ -286,19 +300,13 @@ span{
 
     .btn-wrapper{
         position:relative;
-        margin-top:-56.3vh;
+        margin-top:-70vh;
         float:right;
         height:70px;
         left:-6%;
         width:130px
     }
 
-    .btn-wrapper .v-btn{
-        margin-right:0px;
-        margin-left:0px;
-        padding-left: -25px;
-        padding-right: -5px
-    }
 
     .nav{
         margin-top: 0%;
@@ -355,7 +363,18 @@ span{
     }
 
     .slider-header{
-        margin-top:15%;
+        margin-top:15%;;
+        padding-left:0px;
+        padding-right:10%
+    }
+
+    .content-wrap{
+        padding-left:0px;
+        padding-right:15%
+    }
+
+    .shop-now{
+        padding-left:0px
     }
 
     .closeButton{
