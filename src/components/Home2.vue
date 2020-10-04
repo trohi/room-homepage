@@ -149,7 +149,7 @@ export default {
     margin-right:0%;
     padding-left:1%;
     padding-right:1%;
-    height:70vh
+    height:41vh
 }
 .layout{
     display:inline-flex;
