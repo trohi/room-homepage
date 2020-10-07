@@ -154,7 +154,7 @@ export default {
 .layout{
     display:inline-flex;
     width:100%;
-    margin-top:-10%;
+    margin-top:0px;
     padding-top:0px
 }
 
@@ -231,7 +231,7 @@ span{
 }
 
 .btn-wrapper{
-    margin-top:9.8%;
+    margin-top:6.2%;
     margin-left:-2.4%;
     margin-right:auto;
     display:flex;
@@ -251,7 +251,7 @@ span{
 
 .shop-now{
     display:inline-flex;
-    margin-top:5%;
+    margin-top:15%;
     margin-right:20px;
     cursor:pointer;
     padding: 0px 0px 0px 84px
