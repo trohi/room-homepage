@@ -7,14 +7,12 @@
 </template>
 
 <script>
-import Home from './components/Home';
 import Home2 from './components/Home2';
 
 export default {
   name: 'App',
 
   components: {
-    Home,
     Home2
   },
 
