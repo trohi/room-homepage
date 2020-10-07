@@ -231,7 +231,7 @@ span{
 }
 
 .btn-wrapper{
-    margin-top:6.2%;
+    margin-top:11.5%;
     margin-left:-2.4%;
     margin-right:auto;
     display:flex;
